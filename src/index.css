@@ -203,8 +203,16 @@ body {
   margin: 0;
 }
 
+.project-card-title-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 .project-card-badges {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
   gap: 10px;
@@ -231,7 +239,7 @@ body {
   align-items: center;
   background-color: #4D4D4D;
   width: 80px;
-  height: 30px;
+  height: 20px;
   border-radius: 50px;
 }
 
@@ -259,14 +267,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid red;
+  border: 1px solid #dc3545;
   border-radius: 5px;
-  color: red;
+  color: #dc3545;
   cursor: pointer;
 }
 
 .live-link:hover {
-  background-color: red;
+  background-color: #dc3545;
   color: white
 }
 
@@ -281,14 +289,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid blue;
+  border: 1px solid #17a2b8;
   border-radius: 5px;
-  color: blue;
+  color: #17a2b8;
   cursor: pointer;
 }
 
 .code-link:hover {
-  background-color: blue;
+  background-color: #17a2b8;
   color: white;
 }
 
@@ -405,12 +413,12 @@ body {
   }
 
   .project-card > img {
-    height: 350px;
-    width: 350px;
+    height: 280px;
+    width: 280px;
   }
 
   .project-card-text-container {
-    width: 350px;
+    width: 300px;
     height: auto;
     justify-content: flex-start;
     align-items: center;

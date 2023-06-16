@@ -9,9 +9,10 @@ export default function ProjectCard({project}) {
             <img src={project.image} alt="" />
             <div className="project-card-text-container">
                 <div className="project-card-info">
-                    <h3>{project.title}</h3>
+                    <div className="project-card-title-container">
+                        <h3>{project.title} <span style={{color: "#aeaeae", fontWeight: "200"}}>{`(${project.year})`}</span></h3>
+                    </div>
                     <div className="project-card-badges">
-                        <YearBadge year={project.year}/>
                         {project.techStack.map((techName, i)=>{
                             const tech = techs.find(tech => tech.name === techName);
                             return (
