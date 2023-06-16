@@ -1,7 +1,6 @@
 import React from "react";
 import LogoBadge from "./LogoBadge";
 import techs from "../techs";
-import YearBadge from "./YearBadge";
 
 export default function ProjectCard({project}) {
     return (
@@ -9,9 +8,7 @@ export default function ProjectCard({project}) {
             <img src={project.image} alt="" />
             <div className="project-card-text-container">
                 <div className="project-card-info">
-                    <div className="project-card-title-container">
-                        <h3>{project.title} <span style={{color: "#aeaeae", fontWeight: "200"}}>{`(${project.year})`}</span></h3>
-                    </div>
+                    <h3>{project.title} <span style={{color: "#aeaeae", fontWeight: "200"}}>{`(${project.year})`}</span></h3>
                     <div className="project-card-badges">
                         {project.techStack.map((techName, i)=>{
                             const tech = techs.find(tech => tech.name === techName);

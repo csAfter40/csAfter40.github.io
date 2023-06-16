@@ -49,6 +49,10 @@ body {
   text-align: center;
 }
 
+#navlink-container > a:hover {
+  text-decoration-line: underline;
+}
+
 #navlink-container > a.active {
 
   background-color: rgb(195, 195, 195);
@@ -203,13 +207,6 @@ body {
   margin: 0;
 }
 
-.project-card-title-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
-}
-
 .project-card-badges {
   display: flex;
   flex-wrap: wrap;
@@ -224,7 +221,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #c3c0c0;
+  background-color: #dadada;
   border-radius: 3px;
 }
 
@@ -325,11 +322,12 @@ body {
 
 #contact > form > label {
   margin-top: 10px;
+  margin-bottom: 3px;
 }
 
 #contact > form > input {
   width: 100%;
-  height: 30px;
+  height: 40px;
   border-radius: 5px;
   border: 1px solid #c3c0c0;
 }
@@ -343,7 +341,17 @@ body {
 
 
 #contact > form > input[type="submit"] {
+  background-color: none;
+  border: 1px solid #17a2b8;
+  border-radius: 5px;
+  color: #17a2b8;
+  cursor: pointer;
   margin-top: 30px;
+}
+
+#contact > form > input[type="submit"]:hover {
+  background-color: #17a2b8;
+  color: white;
 }
 
 /* Footer */

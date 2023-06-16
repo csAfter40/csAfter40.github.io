@@ -1,9 +1,22 @@
-import React, { useRef } from "react";
+import React from "react";
 import emailjs from '@emailjs/browser';
+import Button from "react-bootstrap/Button"
+import Modal from "react-bootstrap/Modal"
 
 export default function Contact() {
-    const form = useRef();
-
+    const form = React.useRef();
+    const [showSuccessModal, setShowSuccessModal] = React.useState(false);
+    const [showFailModal, setShowFailModal] = React.useState(false);
+    const handleCloseSuccess = () => {
+        setShowSuccessModal(false);
+        form.current.reset();
+    };
+    const handleCloseFail = () => {
+        setShowFailModal(false);
+        form.current.reset();
+    };
+    const handleShowSuccess = () => setShowSuccessModal(true);
+    const handleShowFail = () => setShowFailModal(true);
     const sendEmail = (e) => {
         e.preventDefault();
 
@@ -14,9 +27,10 @@ export default function Contact() {
             'ZuXebhaKSoQqUBTHY'
         )
         .then((result) => {
-            console.log(result.text);
+            console.log(result);
+            result.text==="OK" && handleShowSuccess();
         }, (error) => {
-            console.log(error.text);
+            handleShowFail()
         });
     };
 
@@ -32,6 +46,19 @@ export default function Contact() {
                 <textarea name="message" />
                 <input type="submit" value="Send" />
             </form>
+            <Modal show={showSuccessModal} onHide={handleCloseSuccess}>
+                <Modal.Body>Message successfully sent!</Modal.Body>
+                <Modal.Footer>
+                    <Button variant="secondary" onClick={handleCloseSuccess}>Close</Button>
+                </Modal.Footer>
+            </Modal>
+            <Modal show={showFailModal} onHide={handleCloseFail}>
+                <Modal.Body>Problem occured while sending the message. Why don't you send me an email?</Modal.Body>
+                <Modal.Footer>
+                    <a href="mailto:csAfter40@gmail.com"><Button variant="primary">Send email!</Button></a>
+                    <Button variant="secondary" onClick={handleCloseFail}>Close</Button>
+                </Modal.Footer>
+            </Modal>
         </div>
 
     );

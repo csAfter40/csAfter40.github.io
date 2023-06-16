@@ -15,6 +15,9 @@ export default function Footer() {
                 <a href="https://www.linkedin.com/in/muzaffer-bar%C4%B1%C5%9F-yavuz-991109260/" target="_blank" rel="noreferrer">
                     <i className="bi bi-linkedin"></i>
                 </a>
+                <a href="mailto:csAfter40@gmail.com">
+                    <i className="bi bi-envelope-at-fill"></i>
+                </a>
         </footer>
     )
 }
