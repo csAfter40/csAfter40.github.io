@@ -21,6 +21,17 @@ export default function Projects() {
         )
     }, [filterList])
 
+    React.useEffect(()=>{
+        function handleClick(event) {
+            if(![...filterDescendants].includes(event.target)) {
+                filterButton.current.classList.remove("open");
+            }
+        }
+        const body = document.querySelector("body");
+        const filterDescendants = document.querySelector(".dropdown-filter").querySelectorAll("*");
+        body.addEventListener("click", handleClick);
+    })
+
     function refreshFilterList () {
         const selectedItems = document.querySelectorAll(".dropdown-filter-item.selected");
         setFilterList([...selectedItems].map(item=>item.dataset.name));
@@ -48,8 +59,10 @@ export default function Projects() {
             <h3>My Projects</h3>
             <div className="filter-container">
                 <div className="dropdown-filter" ref={filterButton}>
-                    <span className="dropdown-filter-btn" onClick={toggleFilterItems} >Filter by tech</span>
-                    <span className="dropdown-filter-arrow"><i className="bi bi-chevron-down"></i></span>
+                    <div className="filter-elements" onClick={toggleFilterItems}>
+                        <span className="dropdown-filter-btn"  >Filter by tech</span>
+                        <span className="dropdown-filter-arrow"><i className="bi bi-chevron-down"></i></span>
+                    </div>
                     <ul className="dropdown-filter-items">
                         {projectTechs.map((tech, i) => {
                             return(
