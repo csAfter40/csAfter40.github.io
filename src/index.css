@@ -169,6 +169,114 @@ body {
   margin: 30px;
 }
 
+.filter-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+
+.filter-container > p{
+  margin: 0;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.dropdown-filter {
+  position: relative;
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-filter-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #bebebe;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: white;
+  border: 1px solid #bebebe;
+  transition: 300ms;
+}
+
+.dropdown-filter.open .dropdown-filter-arrow {
+  transform: rotate(-180deg);
+}
+
+.dropdown-filter-arrow:hover {
+  background-color: white;
+  color:#bebebe
+}
+
+.dropdown-filter-items {
+  margin: 0;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transform: translate(0%, 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: inherit;
+  background-color: white;
+  border-radius: 5px;
+  list-style-type: none;
+  padding: 10px 0;
+  box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+.dropdown-filter.open .dropdown-filter-items {
+  display: block;
+}
+
+
+
+.dropdown-filter-item {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 10px;
+  transition: 150ms;
+}
+
+.dropdown-filter-item:hover {
+  background-color: #dadada;
+  cursor: pointer;
+}
+
+.item-checkbox {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #bebebe;
+  border-radius: 3px;
+  transition: 200ms;
+}
+
+.item-checkbox > i {
+  transform: scale(0);
+  transition: 200ms;
+
+}
+
+.dropdown-filter-item.selected .item-checkbox > i{
+  transform: scale(1);
+}
+
 .project-card {
   background-color: white;
   display: flex;

@@ -10,16 +10,16 @@ import reactImage from "./images/techLogos/react.png";
 import vscodeImage from "./images/techLogos/vscode.png";
 
 const techs = [
-    {name: "python", image: pythonImage, title: "Python"},
-    {name: "django", image: djangoImage, title: "Django"},
-    {name: "javascript", image: javascriptImage, title: "Javascript"},
-    {name: "html", image: htmlImage, title: "HTML"},
-    {name: "css", image: cssImage, title: "CSS"},
-    {name: "react", image: reactImage, title: "React JS"},
-    {name: "postgresql", image: postgresqlImage, title: "PostgreSQL"},
-    {name: "github", image: githubImage, title: "GitHub"},
-    {name: "bootstrap", image: bootstrapImage, title: "Bootstrap"},
-    {name: "vscode", image: vscodeImage, title: "VS Code"},
+    {name: "python", image: pythonImage, title: "Python", isProjectTech: true},
+    {name: "django", image: djangoImage, title: "Django", isProjectTech: true},
+    {name: "javascript", image: javascriptImage, title: "Javascript", isProjectTech: true},
+    {name: "html", image: htmlImage, title: "HTML", isProjectTech: true},
+    {name: "css", image: cssImage, title: "CSS", isProjectTech: true},
+    {name: "react", image: reactImage, title: "React JS", isProjectTech: true},
+    {name: "postgresql", image: postgresqlImage, title: "PostgreSQL", isProjectTech: true},
+    {name: "github", image: githubImage, title: "GitHub", isProjectTech: false},
+    {name: "bootstrap", image: bootstrapImage, title: "Bootstrap", isProjectTech: true},
+    {name: "vscode", image: vscodeImage, title: "VS Code", isProjectTech: false},
 ]
 
 export default techs;
