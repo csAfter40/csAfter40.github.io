@@ -2,6 +2,7 @@ import React from "react";
 import projects from "../projects";
 import ProjectCard from "../components/ProjectCard";
 import techs from "../techs";
+import { convertArrayToFormattedString } from "../utils";
 
 export default function Projects() {
     const projectTechs = techs.filter(tech => tech.isProjectTech===true);
@@ -23,7 +24,7 @@ export default function Projects() {
 
     React.useEffect(()=>{
         function handleClick(event) {
-            if(![...filterDescendants].includes(event.target)) {
+            if(filterButton.current && ![...filterDescendants].includes(event.target)) {
                 filterButton.current.classList.remove("open");
             }
         }
@@ -84,7 +85,20 @@ export default function Projects() {
                 
                 <p className="clear-filter-btn" onClick={clearFilter}>clear filter</p>
             </div>
-            {filteredProjects.map(project => <ProjectCard key={project.id} project={project}/>)}
+            {filteredProjects.length
+                ? filteredProjects.map(project => <ProjectCard key={project.id} project={project}/>)
+                : <div className="project-card-no-results">
+                    <h3>0 results found for&nbsp;
+                        {
+                            convertArrayToFormattedString(
+                                filterList.map(filterTech => {
+                                    return techs.filter(tech=>tech.name===filterTech)[0].title
+                                })
+                            )
+                        }
+                    </h3>
+                </div>
+            }
         </div>
     )
 }
