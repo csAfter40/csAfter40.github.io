@@ -8,6 +8,7 @@ import postgresqlImage from "./images/techLogos/postgresql.png";
 import pythonImage from "./images/techLogos/python.png";
 import reactImage from "./images/techLogos/react.png";
 import vscodeImage from "./images/techLogos/vscode.png";
+import pygameImage from "./images/techLogos/pygame.png";
 
 const techs = [
     {name: "python", image: pythonImage, title: "Python", isProjectTech: true},
@@ -20,6 +21,7 @@ const techs = [
     {name: "github", image: githubImage, title: "GitHub", isProjectTech: false},
     {name: "bootstrap", image: bootstrapImage, title: "Bootstrap", isProjectTech: true},
     {name: "vscode", image: vscodeImage, title: "VS Code", isProjectTech: false},
+    {name: "pygame", image: pygameImage, title: "Pygame", isProjectTech: true},
 ]
 
 export default techs;
