@@ -1,22 +1,36 @@
 {
   "files": {
-    "main.css": "/static/css/main.72e91493.css",
-    "main.js": "/static/js/main.ce233c30.js",
+    "main.css": "/static/css/main.530d9dbc.css",
+    "main.js": "/static/js/main.d1772e8c.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
-    "static/media/pp.jpg": "/static/media/pp.b6f6177e1e848834b6e1.jpg",
+    "static/media/pp.jpg": "/static/media/pp.1626251fad5bd17377e6.jpg",
+    "static/media/wallet2.png": "/static/media/wallet2.5c2e24bdfed159f8c6cd.png",
+    "static/media/wallet1.png": "/static/media/wallet1.72ffc793ab5d15ec237a.png",
     "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.4753c5ba57962b4d7bf8.woff",
+    "static/media/jump5.jpg": "/static/media/jump5.d62b5ea0e4cce944fb42.jpg",
+    "static/media/jump2.jpg": "/static/media/jump2.45feea87d26fe8b9d191.jpg",
     "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.6d63d0501e5ed7b79dab.woff2",
-    "static/media/wallet.png": "/static/media/wallet.5d17e632ada2a421b05d.png",
+    "static/media/jump1.jpg": "/static/media/jump1.09a8c6632a3e2bdf2e55.jpg",
+    "static/media/jump3.jpg": "/static/media/jump3.bb7191916edb2f458ecc.jpg",
+    "static/media/jump4.jpg": "/static/media/jump4.d129c0ea09e5b05cc201.jpg",
+    "static/media/wallet6.png": "/static/media/wallet6.1c161afaa463f0fce472.png",
+    "static/media/wallet5.png": "/static/media/wallet5.9e7eaa978279fd060fdc.png",
+    "static/media/wordle3.png": "/static/media/wordle3.fe2cd9110d7d2cffa7bd.png",
+    "static/media/wordle2.png": "/static/media/wordle2.f67390d4ec31693f0f3c.png",
+    "static/media/wordle4.png": "/static/media/wordle4.bbcb55a600378f0499b4.png",
     "static/media/jump.png": "/static/media/jump.0d7e02beb30b0f4e0a3b.png",
-    "static/media/wordle.png": "/static/media/wordle.8913dacd68cbb7cc625f.png",
+    "static/media/wallet3.png": "/static/media/wallet3.312ffde0b234c782372e.png",
+    "static/media/wallet7.png": "/static/media/wallet7.a86bde744cbf37dfc91b.png",
+    "static/media/wallet4.png": "/static/media/wallet4.9ead4002ddeb3890d801.png",
+    "static/media/wordle1.png": "/static/media/wordle1.8913dacd68cbb7cc625f.png",
     "static/media/pygame.png": "/static/media/pygame.7cea958421e4bb9b49fc.png",
     "index.html": "/index.html",
-    "main.72e91493.css.map": "/static/css/main.72e91493.css.map",
-    "main.ce233c30.js.map": "/static/js/main.ce233c30.js.map",
+    "main.530d9dbc.css.map": "/static/css/main.530d9dbc.css.map",
+    "main.d1772e8c.js.map": "/static/js/main.d1772e8c.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.72e91493.css",
-    "static/js/main.ce233c30.js"
+    "static/css/main.530d9dbc.css",
+    "static/js/main.d1772e8c.js"
   ]
 }
