@@ -500,6 +500,12 @@ body {
   color: #0A66C2;
 }
 
+.carousel-modal-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+}
+
 @media screen and (max-width: 700px) {
   #navbar {
     flex-direction: column;
@@ -558,6 +564,7 @@ body {
   .project-card > img {
     height: 280px;
     width: 280px;
+    cursor: pointer;
   }
 
   .project-card-text-container {
