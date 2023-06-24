@@ -27,6 +27,7 @@ const projects = [
         year: 2023,
         liveUrl: "https://costmanagementapp-production.up.railway.app/",
         codeUrl: "https://github.com/csAfter40/cost_management_app",
+        watchUrl: null,
         detailPictures: [walletImg1, walletImg2, walletImg3, walletImg4, walletImg5, walletImg6, walletImg7],
     },
     {
@@ -38,6 +39,7 @@ const projects = [
         year: 2023,
         liveUrl: "https://main--super-florentine-6222ff.netlify.app/",
         codeUrl: "https://github.com/csAfter40/wordle-clone",
+        watchUrl: null,
         detailPictures: [wordleImg1, wordleImg2, wordleImg3, wordleImg4],
     },
     {
@@ -49,6 +51,7 @@ const projects = [
         year: 2021,
         liveUrl: null,
         codeUrl: "https://github.com/csAfter40/jump-jump",
+        watchUrl: "https://www.youtube.com/embed/Aa2DaPypNjw",
         detailPictures: [jumpImg1, jumpImg2, jumpImg3, jumpImg4, jumpImg5],
     },
 ]

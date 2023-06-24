@@ -2,10 +2,12 @@ import React from "react";
 import LogoBadge from "./LogoBadge";
 import techs from "../techs";
 import CarouselModal from "./CarouselModal";
+import VideoModal from "./VideoModal";
 
 
 export default function ProjectCard({project}) {
     const [carouselModalShow, setCarouselModalShow] = React.useState(false);
+    const [videoModalShow, setVideoModalShow] = React.useState(false);
     console.log(carouselModalShow)
     return (
         <>
@@ -35,6 +37,9 @@ export default function ProjectCard({project}) {
                         {project.codeUrl && <a href={project.codeUrl} target="_blank" rel="noreferrer"><div className="code-link">
                             <h4>View Code</h4>
                         </div></a>}
+                        {project.watchUrl && <div className="live-link" onClick={()=>setVideoModalShow(true)}> 
+                            <h4>Watch</h4>
+                        </div>}
                     </div>
                 </div>
             </div>
@@ -43,6 +48,14 @@ export default function ProjectCard({project}) {
                 project={project} 
                 onHide={()=>setCarouselModalShow(false)}
             />
+            {
+                project.watchUrl && 
+                <VideoModal
+                    show={videoModalShow}
+                    project={project}
+                    onHide={()=>setVideoModalShow(false)}
+                />
+            }
         </>
         
     )
