@@ -153,11 +153,25 @@ body {
   background-color: rgb(187, 187, 187);
 }
 
+.skill.selected {
+  width: 100px;
+  height: 100px;
+  box-shadow: -4px 4px 15px rgb(108, 108, 108);
+  border: 3px solid rgba(122, 86, 86, 0.279);
+}
+
 .skill > img {
   max-width: 50px;
   max-height: 50px;
 }
 
+#skills-text-container {
+  text-align: justify;
+}
+
+#skills-text-container > h3{
+  margin: 20px 0;
+}
 
 /* Portfolio Page */
 #portfolio {
