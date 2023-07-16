@@ -325,6 +325,10 @@ body {
   object-fit: contain;
 }
 
+.project-card > img:hover {
+  cursor: pointer;
+}
+
 .project-card-text-container {
   width: 400px;
   height: 100%;

@@ -8,7 +8,6 @@ import VideoModal from "./VideoModal";
 export default function ProjectCard({project}) {
     const [carouselModalShow, setCarouselModalShow] = React.useState(false);
     const [videoModalShow, setVideoModalShow] = React.useState(false);
-    console.log(carouselModalShow)
     return (
         <>
             <div className="project-card">
