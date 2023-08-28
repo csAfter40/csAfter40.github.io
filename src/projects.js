@@ -26,7 +26,6 @@ const projects = [
         techStack: ["python", "django", "html", "javascript", "css", "postgresql", "bootstrap"],
         year: 2023,
         liveUrl: "https://cost-management-app.vercel.app",
-        // liveUrl: "https://costmanagementapp-production.up.railway.app/",
         codeUrl: "https://github.com/csAfter40/cost_management_app",
         watchUrl: null,
         detailPictures: [walletImg1, walletImg2, walletImg3, walletImg4, walletImg5, walletImg6, walletImg7],
